@@ -1687,7 +1687,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f5f;
+  background: #46112d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2457,6 +2457,8 @@ hr {
 }
 .header {
   background: rgba(85,85,85,0.6);
+  position: relative;
+  z-index: 9;
 }
 .header-inner {
   padding: 25px 0 20px;
@@ -2716,9 +2718,6 @@ hr {
   background-position: center center;
   z-index: 1;
 }
-.demo-1 .large-header {
-  background-image: url("../images/demo-1-bg.jpg");
-}
 .main-title {
   position: absolute;
   margin: 0;
@@ -2975,6 +2974,7 @@ body {
   padding: 10px 0;
   background: rgba(85,85,85,0.6);
   color: #fff;
+  z-index: 9;
 }
 .footer-inner {
   margin: 0 auto;
