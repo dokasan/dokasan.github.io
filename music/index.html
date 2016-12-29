@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mistest use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -84,13 +84,16 @@
 
 
 
+<meta name="description" content="var duoshuoQuery = {short_name:”ayisaka”};    (function() {        var ds = document.createElement(‘script’);        ds.type = ‘text/javascript’;ds.async = true;        ds.src = (document.locati">
 <meta property="og:type" content="website">
 <meta property="og:title" content="音乐推荐">
 <meta property="og:url" content="http://guanhua.com/music/index.html">
 <meta property="og:site_name" content="AYISAKA博客">
-<meta property="og:updated_time" content="2016-12-28T09:45:14.000Z">
+<meta property="og:description" content="var duoshuoQuery = {short_name:”ayisaka”};    (function() {        var ds = document.createElement(‘script’);        ds.type = ‘text/javascript’;ds.async = true;        ds.src = (document.locati">
+<meta property="og:updated_time" content="2016-12-29T03:30:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="音乐推荐">
+<meta name="twitter:description" content="var duoshuoQuery = {short_name:”ayisaka”};    (function() {        var ds = document.createElement(‘script’);        ds.type = ‘text/javascript’;ds.async = true;        ds.src = (document.locati">
 
 
 
@@ -98,7 +101,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Mistest',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -131,6 +134,7 @@
     音乐推荐 | AYISAKA博客
   
 </title>
+  
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -276,6 +280,11 @@
     
       <center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=446247397&auto=0&height=66"></iframe></center><br><center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=34057671&auto=0&height=66"></iframe></center><br><center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33599403&auto=0&height=66"></iframe></center><br><center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=28757331&auto=0&height=66"></iframe></center><br><center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33085029&auto=0&height=66"></iframe></center>
 
+
+<!-- 多说评论框 start -->
+<p> <div class="ds-thread" data-thread-key="<%- page.path %>" data-title="<%- page.title %>" data-url="<%- page.permalink %>"></div><br><!-- 多说评论框 end --><br><!-- 多说公共JS代码 start (一个网页只需插入一次) --></p>
+<p><script type="text/javascript"><br>var duoshuoQuery = {short_name:”ayisaka”};<br>    (function() {<br>        var ds = document.createElement(‘script’);<br>        ds.type = ‘text/javascript’;ds.async = true;<br>        ds.src = (document.location.protocol == ‘https:’ ? ‘https:’ : ‘http:’) + ‘//static.duoshuo.com/embed.js’;<br>        ds.charset = ‘UTF-8’;<br>        (document.getElementsByTagName(‘head’)[0]<br>         || document.getElementsByTagName(‘body’)[0]).appendChild(ds);<br>    })();<br>    </script><br><!-- 多说公共JS代码 end --></p>
+
     
   </div>
 
@@ -285,27 +294,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="<%- page.path %>" data-title="<%- page.title %>" data-url="<%- page.permalink %>"></div>
-      <!-- 多说评论框 end -->
-      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-      <script type="text/javascript">
-      var duoshuoQuery = {short_name:"ayisaka"};
-        (function() {
-          var ds = document.createElement('script');
-          ds.type = 'text/javascript';ds.async = true;
-          ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-          ds.charset = 'UTF-8';
-          (document.getElementsByTagName('head')[0] 
-           || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-      </script>
-      <!-- 多说公共JS代码 end -->
-    
-  </div>
-
 
         </div>
         
@@ -397,7 +385,13 @@
         
       </div>
     </main>
-
+    <div class="container demo-1">
+      <div class="content">
+          <div id="large-header" class="large-header">
+              <canvas id="demo-canvas"></canvas>
+          </div>
+      </div>
+    </div>
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright" >
@@ -455,6 +449,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -473,6 +471,18 @@
 
   
   <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/TweenLite.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/EasePack.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/rAF.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/demo-1.js"></script>
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>

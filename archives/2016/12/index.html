@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mistest use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -100,7 +100,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Mistest',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -127,6 +127,7 @@
 
 
   <title> 归档 | AYISAKA博客 </title>
+  
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -417,7 +418,13 @@
         
       </div>
     </main>
-
+    <div class="container demo-1">
+      <div class="content">
+          <div id="large-header" class="large-header">
+              <canvas id="demo-canvas"></canvas>
+          </div>
+      </div>
+    </div>
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright" >
@@ -475,6 +482,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -493,6 +504,18 @@
 
   
   <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/TweenLite.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/EasePack.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/rAF.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/demo-1.js"></script>
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>

@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mistest use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -100,7 +100,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Mistest',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -127,6 +127,7 @@
 
 
   <title> AYISAKA博客 </title>
+  
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -326,18 +327,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2016/12/27/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/27/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
 
           
 
@@ -499,7 +488,13 @@ Quick
         
       </div>
     </main>
-
+    <div class="container demo-1">
+      <div class="content">
+          <div id="large-header" class="large-header">
+              <canvas id="demo-canvas"></canvas>
+          </div>
+      </div>
+    </div>
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright" >
@@ -557,6 +552,10 @@ Quick
 
 
 
+
+
+
+
   
 
 
@@ -575,6 +574,18 @@ Quick
 
   
   <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/TweenLite.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/EasePack.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/rAF.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/demo-1.js"></script>
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>

@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mistest use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -92,7 +92,7 @@ Quick">
 <meta property="og:site_name" content="AYISAKA博客">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick">
-<meta property="og:updated_time" content="2016-12-27T06:42:34.000Z">
+<meta property="og:updated_time" content="2016-12-29T03:27:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
@@ -104,7 +104,7 @@ Quick">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Mistest',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -131,6 +131,7 @@ Quick">
 
 
   <title> Hello World | AYISAKA博客 </title>
+  
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -325,18 +326,6 @@ Quick">
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2016/12/27/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/27/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
 
           
 
@@ -414,27 +403,6 @@ Quick">
 
 
           
-  <div class="comments" id="comments">
-    
-      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="<%- page.path %>" data-title="<%- page.title %>" data-url="<%- page.permalink %>"></div>
-      <!-- 多说评论框 end -->
-      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-      <script type="text/javascript">
-      var duoshuoQuery = {short_name:"ayisaka"};
-        (function() {
-          var ds = document.createElement('script');
-          ds.type = 'text/javascript';ds.async = true;
-          ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-          ds.charset = 'UTF-8';
-          (document.getElementsByTagName('head')[0] 
-           || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-      </script>
-      <!-- 多说公共JS代码 end -->
-    
-  </div>
-
 
         </div>
         
@@ -551,7 +519,13 @@ Quick">
         
       </div>
     </main>
-
+    <div class="container demo-1">
+      <div class="content">
+          <div id="large-header" class="large-header">
+              <canvas id="demo-canvas"></canvas>
+          </div>
+      </div>
+    </div>
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright" >
@@ -609,6 +583,10 @@ Quick">
 
 
 
+
+
+
+
   
 
 
@@ -627,6 +605,18 @@ Quick">
 
   
   <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/TweenLite.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/EasePack.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/rAF.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas/demo-1.js"></script>
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
