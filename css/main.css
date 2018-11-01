@@ -1462,7 +1462,7 @@ pre .javascript .function {
   display: block;
   line-height: 25px;
   font-size: 14px;
-  color: #555;
+  color: #fff;
   border-bottom: none;
 }
 .post-nav-item a:hover {
@@ -2193,7 +2193,7 @@ a.search-result {
 .site-uv,
 .site-pv,
 .page-pv {
-  display: inline-block;
+
 }
 .site-uv .busuanzi-value,
 .site-pv .busuanzi-value,
